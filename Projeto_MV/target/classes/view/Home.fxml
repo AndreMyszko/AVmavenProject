@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.shape.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.controller.HomeController">
+   <children>
+      <Text fill="WHITE" layoutX="14.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HOME">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnClose" layoutX="774.0" layoutY="2.0" mnemonicParsing="false" onAction="#btnClose" prefHeight="20.0" prefWidth="21.0" style="-fx-background-color: red;" text="X" textFill="WHITE" />
+      <Button fx:id="btnProf" layoutX="132.0" layoutY="4.0" mnemonicParsing="false" onAction="#btnProf" prefHeight="44.0" prefWidth="107.0" style="-fx-background-color: blue;" text="Professores" textFill="WHITE" />
+      <Button fx:id="btnAluno" layoutX="245.0" layoutY="5.0" mnemonicParsing="false" onAction="#btnAluno" prefHeight="44.0" prefWidth="107.0" style="-fx-background-color: green;" text="Alunos" textFill="WHITE" />
+      <StackedBarChart layoutX="13.0" layoutY="65.0" prefHeight="521.0" prefWidth="772.0" style="-fx-background-color: white;" title="RELAÇÃO: PROF. ALUNO POR DISCIPLINA">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </StackedBarChart>
+   </children>
+</AnchorPane>

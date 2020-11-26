@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.controller.RegTeacherController">
+   <children>
+      <Text fill="WHITE" layoutX="14.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="REGISTRO PROFESSOR">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnClose" layoutX="774.0" layoutY="2.0" mnemonicParsing="false" onAction="#btnClose" style="-fx-background-color: red;" text="X" textFill="WHITE" />
+      <Button fx:id="btnReturn" layoutX="716.0" layoutY="2.0" mnemonicParsing="false" onAction="#btnReturn" prefHeight="25.0" prefWidth="53.0" style="-fx-background-color: blue;" text="&lt;-" textFill="WHITE" />
+      <Button layoutX="356.0" layoutY="452.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" style="-fx-background-color: green;" text="Salvar" textFill="WHITE" />
+      <TextField layoutX="275.0" layoutY="165.0" prefHeight="25.0" prefWidth="251.0" promptText="nome..." />
+      <TextField layoutX="275.0" layoutY="201.0" prefHeight="25.0" prefWidth="251.0" promptText="email..." />
+      <TextField layoutX="275.0" layoutY="237.0" prefHeight="25.0" prefWidth="251.0" promptText="fone..." />
+      <TextField layoutX="275.0" layoutY="269.0" prefHeight="25.0" prefWidth="251.0" promptText="endereço..." />
+      <TextField layoutX="275.0" layoutY="343.0" prefHeight="25.0" prefWidth="251.0" promptText="rp..." />
+      <TextField layoutX="275.0" layoutY="377.0" prefHeight="25.0" prefWidth="251.0" promptText="curso..." />
+      <TextField layoutX="275.0" layoutY="410.0" prefHeight="25.0" prefWidth="251.0" promptText="salario..." />
+      <Text fill="WHITE" layoutX="307.0" layoutY="326.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sobre o Professor">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="319.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dados Pessoais">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

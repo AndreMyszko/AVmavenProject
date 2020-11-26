@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.controller.TeacherController">
+   <children>
+      <Button fx:id="btnClose" layoutX="774.0" layoutY="2.0" mnemonicParsing="false" onAction="#btnClose" prefHeight="20.0" prefWidth="21.0" style="-fx-background-color: red;" text="X" textFill="WHITE" />
+      <Text fill="WHITE" layoutX="21.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PROFESSORES">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnReturn" layoutX="716.0" layoutY="2.0" mnemonicParsing="false" onAction="#btnReturn" prefHeight="25.0" prefWidth="52.0" style="-fx-background-color: blue;" text="&lt;-" textFill="WHITE" />
+      <TableView fx:id="tableView" layoutX="14.0" layoutY="100.0" prefHeight="484.0" prefWidth="770.0">
+        <columns>
+          <TableColumn fx:id="cCod" prefWidth="75.0" text="COD" />
+          <TableColumn fx:id="cNome" prefWidth="75.0" text="NOME" />
+            <TableColumn fx:id="cEmail" prefWidth="75.0" text="EMAIL" />
+            <TableColumn fx:id="cFone" prefWidth="75.0" text="FONE" />
+            <TableColumn fx:id="cEndereco" prefWidth="75.0" text="ENDEREÇO" />
+            <TableColumn fx:id="cRp" prefWidth="75.0" text="RP" />
+            <TableColumn fx:id="cCurso" prefWidth="75.0" text="CURSO" />
+            <TableColumn fx:id="cSalario" prefWidth="75.0" text="SALÁRIO" />
+            <TableColumn fx:id="cEditar" prefWidth="75.0" />
+            <TableColumn fx:id="cExcluir" prefWidth="75.0" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnNovo" layoutX="699.0" layoutY="69.0" mnemonicParsing="false" onAction="#btnNovo" prefHeight="25.0" prefWidth="85.0" style="-fx-background-color: green;" text="NOVO" textFill="WHITE" />
+      <TextField fx:id="txtCodPesquisa" layoutX="14.0" layoutY="69.0" prefHeight="25.0" prefWidth="119.0" promptText="Pesquisar ID...." />
+      <Button fx:id="btnPesquisar" layoutX="438.0" layoutY="69.0" mnemonicParsing="false" onAction="#btnPesquisar" prefHeight="25.0" prefWidth="85.0" style="-fx-background-color: green;" text="Pesquisa -&gt;" textFill="WHITE" />
+      <TextField fx:id="txtNomePesquisa" layoutX="141.0" layoutY="69.0" prefHeight="25.0" prefWidth="290.0" promptText="Pesquisar Nome...." />
+   </children>
+</AnchorPane>
