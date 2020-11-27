@@ -31,7 +31,7 @@
       </TableView>
       <Button fx:id="btnNovo" layoutX="699.0" layoutY="69.0" mnemonicParsing="false" onAction="#btnNovo" prefHeight="25.0" prefWidth="85.0" style="-fx-background-color: green;" text="NOVO" textFill="WHITE" />
       <TextField fx:id="txtCodPesquisa" layoutX="14.0" layoutY="69.0" prefHeight="25.0" prefWidth="119.0" promptText="Pesquisar ID...." />
-      <Button layoutX="438.0" layoutY="69.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="85.0" style="-fx-background-color: green;" text="Pesquisa -&gt;" textFill="WHITE" />
+      <Button fx:id="btnPesquisar" layoutX="438.0" layoutY="69.0" mnemonicParsing="false" onAction="#btnPesquisar" prefHeight="25.0" prefWidth="85.0" style="-fx-background-color: green;" text="Pesquisa -&gt;" textFill="WHITE" />
       <TextField fx:id="txtNomePesquisa" layoutX="141.0" layoutY="69.0" prefHeight="25.0" prefWidth="290.0" promptText="Pesquisar Nome...." />
    </children>
 </AnchorPane>
